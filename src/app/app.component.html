@@ -1,0 +1,19 @@
+<div class="demo-button-container">
+  <button (click)="addData()" class="demo-button">
+    Add User
+  </button>
+</div>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Weight</th>
+    <th>Symbol</th>
+  </tr>
+  <tr *ngFor="let u of users">
+    <td>{{u.name}}</td>
+    <td>{{u.weight}}</td>
+    <td>{{u.symbol}}</td>
+  </tr>
+  <tr>
+</table>
